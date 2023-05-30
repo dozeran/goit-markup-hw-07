@@ -27,6 +27,15 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-header">Studio</span></a
           >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22" fill="currentColor">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li>
               <a href="./index.html" class="main-menu link current-page"
@@ -130,6 +139,7 @@
           <ul class="work list">
             <li class="work-items">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="iMac"
                 width="360"
@@ -138,6 +148,7 @@
             </li>
             <li class="work-items">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="iPhone Screenshot"
                 width="360"
@@ -146,6 +157,7 @@
             </li>
             <li class="work-items">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="MacBook and iPhone"
                 width="360"
@@ -162,7 +174,15 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="teammates list">
             <li class="teammates-items">
-              <img src="./images/img4.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="
+                  ./images/team/mark-guerrero.jpg    1x,
+                  ./images/team/mark-guerrero@2x.jpg 2x
+                "
+                src="./images/team/mark-guerrero.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-item">
                 <h3 class="name">Mark Guerrero</h3>
                 <p class="paragraph">Product Designer</p>
@@ -199,7 +219,15 @@
               </div>
             </li>
             <li class="teammates-items">
-              <img src="./images/img5.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="
+                  ./images/team/tom-ford.jpg    1x,
+                  ./images/team/tom-ford@2x.jpg 2x
+                "
+                src="./images/team/tom-ford.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-item">
                 <h3 class="name">Tom Ford</h3>
                 <p class="paragraph">Frontend Developer</p>
@@ -236,7 +264,15 @@
               </div>
             </li>
             <li class="teammates-items">
-              <img src="./images/img6.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="
+                  ./images/team/camila-garcia.jpg    1x,
+                  ./images/team/camila-garcia@2x.jpg 2x
+                "
+                src="./images/team/camila-garcia.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-item">
                 <h3 class="name">Camila Garcia</h3>
                 <p class="paragraph">Marketing</p>
@@ -273,7 +309,15 @@
               </div>
             </li>
             <li class="teammates-items">
-              <img src="./images/img7.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="
+                  ./images/team/daniel-wilson.jpg    1x,
+                  ./images/team/daniel-wilson@2x.jpg 2x
+                "
+                src="./images/team/daniel-wilson.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-item">
                 <h3 class="name">Daniel Wilson</h3>
                 <p class="paragraph">UI Designer</p>
@@ -367,7 +411,7 @@
     <footer class="footer">
       <div class="container flex-container">
         <div class="footer-logo">
-          <a href="./index.html" class="logo link"
+          <a href="./index.html" class="logo link foot-logo"
             >Web<span class="logo-footer">Studio</span></a
           >
           <p class="footer-text">
@@ -514,7 +558,59 @@
         </form>
       </div>
     </div>
-
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu modal-close">
+        <svg width="8" height="8" class="close-button mobile-close">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="link mobile-menu-link">Studio</a></li>
+        <li>
+          <a href="./portfolio.html" class="link mobile-menu-link">Portfolio</a>
+        </li>
+        <li><a href="" class="link mobile-menu-link">Contacts</a></li>
+      </ul>
+      <div class="mobile-menu-contacts">
+        <a href="tel:+110001111111" class="main-phone link"
+          >+11 (000) 111-11-11</a
+        >
+        <a href="mailto:info@devstudio.com" class="main-mail link"
+          >info@devstudio.com</a
+        >
+        <ul class="footer-social-icons list mobile-social">
+          <li class="footer-social-item">
+            <a href="" class="footer-social-links">
+              <svg width="24" height="24" class="footer-social-ico">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-links">
+              <svg width="24" height="24" class="footer-social-ico">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-links">
+              <svg width="24" height="24" class="footer-social-ico">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-links">
+              <svg width="24" height="24" class="footer-social-ico">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
