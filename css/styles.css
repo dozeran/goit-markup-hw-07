@@ -658,7 +658,7 @@ img {
   }
 }
 
-@media (min-width: 1158px) and (min-device-pixel-ratio: 2),
+@media (min-width: 769px) and (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -671,10 +671,10 @@ img {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) and (min-device-pixel-ratio: 2),
-  (min-width: 768px) and (max-width: 1157px) and (-webkit-min-device-pixel-ratio: 2),
-  (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi),
-  (min-width: 768px) and (max-width: 1157px) and (min-resolution: 2dppx) {
+@media (min-width: 429px) and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 429px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 429px) and (max-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 429px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -684,10 +684,10 @@ img {
   }
 }
 
-@media (max-width: 767px) and (min-device-pixel-ratio: 2),
-  (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-  (max-width: 767px) and (min-resolution: 192dpi),
-  (max-width: 767px) and (min-resolution: 2dppx) {
+@media (max-width: 428px) and (min-device-pixel-ratio: 2),
+  (max-width: 428px) and (-webkit-min-device-pixel-ratio: 2),
+  (max-width: 428px) and (min-resolution: 192dpi),
+  (max-width: 428px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
