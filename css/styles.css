@@ -188,7 +188,6 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
-  white-space: nowrap;
 }
 
 .main-mail {
@@ -790,6 +789,10 @@ img {
 @media screen and (max-width: 427px) {
   .modal {
     width: 91%;
+  }
+
+  .main-phone {
+    font-size: 8vw;
   }
 }
 
